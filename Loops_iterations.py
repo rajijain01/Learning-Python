@@ -53,7 +53,6 @@ while x < 10:
 #infinit loop: if we dont set condtition then its going to be infinite loop
 # x = 0
 # while True:
-#     # if x == 5:
-#     #     break
+#     
 #     print(x)
 #     x += 1 
