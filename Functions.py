@@ -22,7 +22,7 @@ heloo_fun()
 # So basically think of a our function as a machine that takes input then produces a result.
 #  Always focus on what is INPUT and what is RETURN value.
 #we can treate our return value as a string function in our example function is returning string"hello function.
-# we can treat return value as string and can make our return value as upper case in above example.
+# we can treat return value as string and can make our return value as upper case in below example.
 def hello_func():
     return 'Hello Function.'
 print(hello_func().upper())
