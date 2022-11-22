@@ -94,5 +94,6 @@ with open('test3.txt','r' ) as rf:
             wf.write(line)
 
 
+#chunk size 4096 : To read the chunk of the data from original copy
 
 

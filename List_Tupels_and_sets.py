@@ -1,4 +1,5 @@
 #create a lists
+
 courses = ['History', 'Maths','Physics','CompSci']
 print(courses)
 
@@ -81,14 +82,76 @@ print(course_str)
 new_list = course_str.split(',')
 print(new_list)
 
-#TUPLES: major difference is that we cant modify tuples, tuples are immutable.Tuples has parenthesis().we cant append, sorted, remove.
+#List elements will be printed within square brackets.
+#Whenver we are converting string to list, each character will become element of the list including space also.
+#here s is string and then we convert s into list
+s= 'AB CD'
+list=list(s)
+list.append('EF')
+print(list) # output: ['A', 'B', ' ', 'C', 'D', 'EF']
+
+
+
+
+
+
+
+#TUPLES:
+#A tuple is a container which holds a series of comma-separated values (items or elements)
+# between parentheses such as an (x, y) co-ordinate.
+# Tuples are like lists, except they are immutable 
+#(i.e. you cannot change its content once created) and can hold mix data types. 
+# Tuples play a sort of "struct" role in Python -- a convenient way to pass around a little logical, fixed size bundle of values
+#  major difference is that we cant modify tuples, tuples are immutable.
+# Tuples has parenthesis().we cant append, sorted, remove.
 tuple_1 = ('Social Studies', 'Gujarati','Hindi', 'English')
 tuple_2 = tuple_1
 
 print(tuple_1)
 print(tuple_2)
 
-#SETS: Are values that are inordered and also dont have duplicates.It has {} paranthesis.It keeps on changing the ordred of the values.It also usefull whether it shares values with other sets.
+#UNPACKING A TUPLE
+#when we create a tuple, we normally assign values to it. This is called 'paking' a tuple
+fruits = ('apple', 'banana', 'cherry')
+
+#But, in python, we are also allowed to extract the values back into variables. This is called 'unpacking'
+fruits = ('apple', 'banana', 'cherry')
+(green, yellow, red) = fruits
+
+
+
+
+
+#SETS: Are values that are inordered and also dont have duplicates.
+# It has {} paranthesis.It keeps on changing the ordred of the values.
+# It also usefull whether it shares values with other sets.
+#sets do not support indexing,slicing,or other sequences-like behaviour.
+# There are currently two built-in set types, set , and frozenset.
+# The set type is mutable- the contents can be changed using methods like add() and remove().
+# Frozen set : is immutable and hashable. that means it can be used as key in dictionary or as an element inn a set.
+
+#adding 
+#A new empty set
+color_set = set()
+#Add a single member
+color_set.add("Red")
+print(color_set)
+ #Add multiple items
+color_set.update(["Blue", "Green"])
+print(color_set)
+
+
+#Removing from set
+num_set = set([0, 1, 2, 3, 4, 5])
+num_set.pop()
+
+print(num_set)
+num_set.pop()
+
+print(num_set)
+
+
+#intersection of 2 set and difference
 cs_courses = {'History','Maths', 'physics', 'CompSci', 'Maths'}
 print(cs_courses)
 

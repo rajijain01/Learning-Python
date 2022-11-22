@@ -2,7 +2,8 @@
 # Addition: 3+2
 # subtraction: 3 - 2
 # Multiply: 3*2
-# Division: 3//2
+# Division: 3/2 : gives quotient with float value for e.g 3/2 = 1.5
+# Division: 3//2 : The division of operands where the result is the quotient in which the digits after the decimal point are removed.
 # Exponent : 3 ** 2
 # Modulus: 3 % 2
 
@@ -90,3 +91,11 @@ num_2 = '200'
 num_1 = int(num_1)
 num_2 = int(num_2)
 print(num_1 + num_2) #ans: 300
+
+#The / symbol will divide the two numbers and return 4.8 that is quotient.
+#The ^ symbol will raise 24 to the fifthpower and return 7962624
+#The mod symbol is not used for calculations in Python.
+#The % operator returns a modulus, a reaminder. 24 divided by 5 is 4 with remainder of 4. Thus the modulus is 4
+a=24
+b=5
+print(a%b)

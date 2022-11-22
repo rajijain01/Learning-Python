@@ -1,5 +1,5 @@
 # comparions:
-# Equal:              ==
+# Equal:              ==  : 
 # Not equal:          !=
 # Greaterr than:       >
 # Less than:           <
@@ -13,7 +13,9 @@
 #   Zero of any number type
 #   Any empty sequence. For example, '',(),[].
 #   Any empty mapping. For example, {}.
-  
+
+
+
 language = 'Python'
 if language=='Python':
     print('Language is Python')
@@ -134,3 +136,37 @@ if condition:
     print('Evaluate to True')
 else:
     print('Evaluate to False')     
+
+
+
+# In the case of integral values zero 0 treated as False and non-zero treated as True.
+#  In the case of float values 0.0  treated as False and all other values (non-zero values) treated as true.
+a=bool(0)
+b=bool(3)
+c=bool(0.5)
+d=bool(0.0)
+
+
+#For Empty String, Empty List,Empty tuple,Empty set,Empty dict and range(0) arguments bool() function returns False.
+
+a= bool([])
+b= bool(())
+c= bool(range(0))
+d= bool({})
+e= bool(set())   
+
+# In boolean expressions:
+# 0 is treated as False, non-zero treated as True
+# empty string is treated as False and non-empty string treated as True
+# None is always treated as False
+
+print(not 0)   #true
+print(not 10)   #false
+print(not '')   #true
+print(not 'durga')  #false
+print(not None)     #true
+
+
+a=15
+b=5
+print(a/b)

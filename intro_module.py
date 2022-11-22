@@ -1,3 +1,10 @@
+#The io module, though not technically needed, is the inpu/output module used to allow python to read adn write to files.
+# The SYS module allows one to see system information, including system errors.
+# The os module allows Python to create folders.
+# The os.path module allows Python code to find specific files and folders along paths.
+
+
+
 #we will import my_module.py file as intro.py and my_module.py are both in same directories
 
 
