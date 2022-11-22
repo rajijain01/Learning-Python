@@ -3,6 +3,16 @@
 #we can move files around
 #its an in-built module
 
+
+# To check to see if a file exists, the os module needs to be imported and os.path.isfile command is used.for e.g
+import os
+if os.path.isfile('results.txt')
+   writefile = open('results.txt', 'a')
+else:
+    writefile = open('results.txt', 'w')
+
+
+
 import os
 
 #all attributes and methods that we have access within module.
@@ -43,3 +53,8 @@ for dirpath, dirnames, filenames in os.walk((os.getcwd())):
 
 #envionmental directory
 #print(os.environ.get('HOME'))
+
+
+
+#SYS MODULE
+#The sys module is used to display exception information, error information, and other system information.
