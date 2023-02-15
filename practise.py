@@ -391,3 +391,4 @@
 
 # print(valid)
 
+print(type(5.0))
